@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./selectItem.css">
+</head>
+<style>
+</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <body>
+    <div>
+      <input type="checkbox" onClick="toggle(this,'heater')" />
+      <input type="checkbox" id="show1" class="hide" onClick="hideShow(this,'block1')" />
+      <label for="show1">heater</label><br/>
+      <ul id="block1" class="block heater">Some text here
+      </ul>
+      <input type="checkbox" onClick="toggle(this,'cooler')" />
+      <input type="checkbox" id="show2" class="hide" onClick="hideShow(this,'block2')" />
+      <label for="show2">cooler</label><br/>
+      <ul id="block2" class="block cooler">Some text here
+      </ul>
+      <input type="checkbox" onClick="toggle(this,'mirror')" />
+      <input type="checkbox" id="show3" class="hide" onClick="hideShow(this,'block3')" />
+      <label for="show3">mirror</label><br/>
+      <ul id="block3" class="block mirror">Some text here
+      </ul>
+      <input type="checkbox" onClick="toggle(this,'other')" />
+      <input type="checkbox" id="show4" class="hide" onClick="hideShow(this,'block4')" />
+      <label for="show4">other</label><br/>
+      <ul id="block4" class="block other">Some text here
+      </ul>
+      <div>
+        <input type="button" onclick="submitItems(this)" value="surrend"/>
+        <input type="button" onclick="sortSubmit(this)" value="sortSubmit"/>
+      </div>
+    </div>
+
+  </body>
+  <script></script>
+  <script src="selectItem.js" charset="utf-8"></script>
+  </html>

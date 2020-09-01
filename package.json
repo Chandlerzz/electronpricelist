@@ -1,0 +1,61 @@
+{
+  "name": "w-search",
+  "version": "1.0.0",
+  "description": "A quickly search application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -p sqlite3",
+    "dist": "electron-builder -- --win "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/electron/electron-quick-start.git"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "wadejs",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "electron-is-dev": "^1.0.1",
+    "electron-tabs": "^0.15.0",
+    "jquery": "^3.3.1",
+    "puppeteer": "^3.3.0",
+    "sortablejs": "^1.7.0",
+    "utf-8-validate": "^5.0.2",
+    "winreg": "^1.2.4",
+    "xlsx": "^0.16.0"
+  },
+  "devDependencies": {
+    "electron": "^3.0.7",
+    "electron-rebuild": "^1.10.1",
+    "electron-builder": "^20.36.2"
+  },
+  "build": {
+    "appId": "searchApp",
+    "productName": "W-SEARCH",
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ],
+      "icon": "./assets/imgs/qqq.ico"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/electron/electron-quick-start/issues"
+  },
+  "homepage": "https://github.com/electron/electron-quick-start#readme"
+}

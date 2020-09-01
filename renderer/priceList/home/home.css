@@ -1,0 +1,14 @@
+.nav{
+  display: flex;
+  /* margin-left: auto; */
+
+
+}
+.nav span{
+  height:40px;
+  width: 80px;
+  li
+}
+.nav span:last-child{
+  margin-left: auto;
+}
